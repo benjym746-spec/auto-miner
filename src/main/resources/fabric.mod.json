@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "auto-miner",
+  "version": "${version}",
+  "name": "Auto Miner",
+  "description": "Meteor Client addon: set two corners and dig out the box with a 3x3 pickaxe.",
+  "authors": [
+    "you"
+  ],
+  "contact": {},
+  "icon": "assets/template/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "com.example.addon.AddonTemplate"
+    ]
+  },
+  "custom": {
+    "meteor-client:color": "225,25,25",
+    "modmenu": {
+      "parent": {
+        "id": "meteor-client"
+      }
+    }
+  },
+  "depends": {
+    "java": ">=${jdk_version}",
+    "minecraft": "${minecraft_version}",
+    "meteor-client": "*"
+  }
+}
